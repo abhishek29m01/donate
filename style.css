@@ -1,0 +1,262 @@
+/* body{
+  margin:0px;
+  padding:0px;
+} */
+
+.nav {
+  background-color: rgb(246, 244, 244);
+}
+
+.nav-pills {
+  /* background-color:grey; */
+  color: green;
+  font-weight: 1000;
+  font-size: 20px;
+}
+
+.main-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-down {
+  width: 50%;
+
+}
+
+.right-up {
+  width: 50%;
+
+}
+
+.nav-link {
+
+  width: 50%;
+
+}
+
+#heading {
+  margin: 10px;
+}
+
+#paragraph {
+  margin: auto 10px;
+  text-align: justify;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.pay-container {
+  display: grid;
+  /* grid-template-columns: repeat(2,1fr); */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50px 60px 50px 60px;
+  /*count number of rows */
+  background-color: rgba(242, 241, 241, 0.986);
+  height: 700px;
+  width: 100%;
+  row-gap: 20px;
+  column-gap: 10%;
+  height: 100%;
+  /* margin:0px; */
+
+}
+
+/* .pay-amount{
+     background-color:yellow;
+  
+  } */
+
+.pay-amount #link {
+  /* width:2000px; */
+  font-weight: 900;
+  color: rgb(252, 251, 251);
+  display: flex;
+  width: 200px;
+  margin: auto;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(10, 200, 89, 1) 100%, rgba(2, 169, 227, 1) 100%, rgba(2, 180, 234, 1) 100%, rgba(0, 212, 255, 1) 100%);
+  text-decoration: none;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(33, 13, 244);
+  border-radius: 30px;
+  /* padding:10px; */
+  font-size: 1.5;
+
+}
+
+
+.pay-amount #links {
+  /* width:2000px; */
+  font-weight: 900;
+  color: rgb(252, 251, 251);
+  display: flex;
+  width: 300px;
+  margin: auto;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(10, 200, 89, 1) 100%, rgba(2, 169, 227, 1) 100%, rgba(2, 180, 234, 1) 100%, rgba(0, 212, 255, 1) 100%);
+  text-decoration: none;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(14, 89, 14);
+  border-radius: 30px;
+  /* padding:10px; */
+  font-size: 1.5;
+
+}
+
+.pay-amount #link:hover {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(10, 200, 89, 1) 100%, rgba(2, 169, 227, 1) 100%, rgba(2, 180, 234, 1) 100%, rgba(0, 212, 255, 1) 100%);
+}
+
+.pay-amount1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  font-weight: 1000;
+  font-size: 2rem;
+  color: blue;
+
+}
+
+.pay-amount5 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.pay-amount7 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.documentation {
+  display: grid;
+  height: 600px;
+  /* background-color: lightgreen; */
+  margin-top: 20px;
+  grid-template-columns: 1fr 1fr;
+  /* row-gap: 20px; */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 2px;
+
+
+}
+
+.documentation img {
+  height: 100%;
+  width: 100%;
+  /* margin:2px; */
+  /* width:100% */
+
+}
+
+.doc1 {
+  background-color: rgb(30, 139, 249);
+
+}
+
+.doc4 {
+  background-color: rgb(30, 139, 249);
+  justify-content: center;
+  align-items: center;
+}
+
+.doc1 h1,
+.doc4 h1 {
+  color: white;
+  font-weight: 1000;
+  font-size: 2rem;
+  text-align: center;
+  margin: 20% 50px 10px 50px;
+
+
+}
+
+.doc1 p,
+.doc4 p {
+  color: white;
+  font-weight: 1000;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0px 5px 10px 5px;
+
+}
+
+
+
+
+@media only screen and (max-width: 992px) {
+
+
+  .nav {
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-div {
+    flex-direction: column;
+
+  }
+
+  .left-down {
+    width: 100%;
+  }
+
+  .right-up {
+    width: 100%;
+  }
+
+  .documentation {
+    margin: 0px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .pay-amount5 {
+    font-size: 1.2rem;
+    text-align: center;
+    /* margin:auto 5px; */
+  }
+
+  .pay-amount1 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    ;
+  }
+
+  .pay-amount #link {
+    width: 100px;
+    height: 35px;
+    border-radius: 5px;
+    margin: 0px auto;
+    /* justify-content: start; */
+  }
+
+  .pay-container {
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-rows: 80px 60px 50px 60px;
+
+  }
+
+
+
+  .documentation {
+    grid-template-columns: 1fr;
+  }
+
+  .doc3 {
+    grid-row-start: 4;
+
+  }
+
+}
